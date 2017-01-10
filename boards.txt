@@ -1,0 +1,75 @@
+# Copyright (c) 2017 Y Soft Corporation, a.s. All rights reserved.
+#
+# This library is free software; you can redistribute it and/or
+# modify it under the terms of the GNU Lesser General Public
+# License as published by the Free Software Foundation; either
+# version 2.1 of the License, or (at your option) any later version.
+#
+# This library is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+# See the GNU Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with this library; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+
+# YSoft IOTA Play (via Atmel ICE)
+# ---------------------------------------
+ysoft_iota_play_atmel_ice.name=YSoft IOTA Play (via Atmel ICE)
+ysoft_iota_play_atmel_ice.upload.tool=arduino:openocd
+ysoft_iota_play_atmel_ice.upload.protocol=sam-ba
+ysoft_iota_play_atmel_ice.upload.maximum_size=262144
+ysoft_iota_play_atmel_ice.upload.use_1200bps_touch=false
+ysoft_iota_play_atmel_ice.upload.wait_for_upload_port=false
+ysoft_iota_play_atmel_ice.upload.native_usb=false
+ysoft_iota_play_atmel_ice.build.mcu=cortex-m0plus
+ysoft_iota_play_atmel_ice.build.f_cpu=48000000L
+ysoft_iota_play_atmel_ice.build.usb_product="YSoft IOTA Play"
+ysoft_iota_play_atmel_ice.build.usb_manufacturer="Y Soft Corporation a.s."
+ysoft_iota_play_atmel_ice.build.board=SAMD_YSOFT_IOTA_PLAY
+ysoft_iota_play_atmel_ice.build.core=arduino:arduino
+ysoft_iota_play_atmel_ice.build.extra_flags=-D__SAMD21G18A__ {build.usb_flags}
+ysoft_iota_play_atmel_ice.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+ysoft_iota_play_atmel_ice.build.openocdscript=openocd_scripts/arduino_zero.cfg
+ysoft_iota_play_atmel_ice.build.variant=IOTA_Play
+ysoft_iota_play_atmel_ice.build.variant_system_lib=
+ysoft_iota_play_atmel_ice.build.vid=0x214c
+ysoft_iota_play_atmel_ice.build.pid=0x0a01
+ysoft_iota_play_atmel_ice.bootloader.tool=arduino:openocd
+ysoft_iota_play_atmel_ice.bootloader.file=iota_play_boot.bin
+
+
+# YSoft IOTA Play (Native USB Port)
+# ---------------------------------------
+ysoft_iota_play_native.name=YSoft IOTA Play (Native USB Port)
+ysoft_iota_play_native.vid.1=0x214c
+ysoft_iota_play_native.pid.1=0x0a01
+ysoft_iota_play_native.vid.2=0x214c
+ysoft_iota_play_native.pid.2=0x0a02
+ysoft_iota_play_native.upload.tool=arduino:bossac
+ysoft_iota_play_native.upload.protocol=sam-ba
+ysoft_iota_play_native.upload.maximum_size=262144
+ysoft_iota_play_native.upload.use_1200bps_touch=true
+ysoft_iota_play_native.upload.wait_for_upload_port=true
+ysoft_iota_play_native.upload.native_usb=true
+ysoft_iota_play_native.build.mcu=cortex-m0plus
+ysoft_iota_play_native.build.f_cpu=48000000L
+ysoft_iota_play_native.build.usb_product="YSoft IOTA Play"
+ysoft_iota_play_native.build.usb_manufacturer="Y Soft Corporation a.s."
+ysoft_iota_play_native.build.board=SAMD_YSOFT_IOTA_PLAY
+ysoft_iota_play_native.build.core=arduino:arduino
+ysoft_iota_play_native.build.extra_flags=-D__SAMD21G18A__ {build.usb_flags}
+ysoft_iota_play_native.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+ysoft_iota_play_native.build.openocdscript=openocd_scripts/arduino_zero.cfg
+ysoft_iota_play_native.build.variant=IOTA_Play
+ysoft_iota_play_native.build.variant_system_lib=
+ysoft_iota_play_native.build.vid=0x214c
+ysoft_iota_play_native.build.pid=0x0a01
+ysoft_iota_play_native.bootloader.tool=arduino:openocd
+ysoft_iota_play_native.bootloader.file=iota_play_boot.bin
+
+#menu.hw_version=HW version
+#ysoft_iota_play_native.menu.hw_version.1_0=1.0
+
