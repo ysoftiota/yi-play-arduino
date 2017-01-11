@@ -1,1 +1,2 @@
-# YSoft IOTA Play support for Arduino IDE
+# YSoft IOTA Play board support for Arduino IDE
+
