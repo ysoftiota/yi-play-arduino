@@ -1,0 +1,16 @@
+language: c
+before_install:
+  - wget http://downloads.arduino.cc/arduino-1.8.1-linux64.tar.xz
+  - tar xf arduino-1.8.1-linux64.tar.xz
+  - sudo mv arduino-1.8.1 /usr/local/share/arduino
+  - sudo ln -s /usr/local/share/arduino/arduino /usr/local/bin/arduino
+  - arduino --install-boards "arduino:samd"
+install:
+  - mkdir -p "~/.arduino15/packages/Y Soft/hardware/samd"
+  - ln -s $PWD ~/.arduino15/packages/Y Soft/hardware/samd/0.0.1
+script:
+  - arduino --verify --board "Y Soft:samd:ysoft_iota_play_native" $PWD:/libraries/yi-play-firmata/examples/StandardFirmataPlus/StandardFirmataPlus.ino
+notifications:
+  email:
+    on_success: change
+    on_failure: change
