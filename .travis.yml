@@ -7,7 +7,8 @@ before_install:
   - arduino --install-boards "arduino:samd"
 install:
   - mkdir -p "~/.arduino15/packages/Y Soft/hardware/samd"
-  - ln -s $PWD ~/.arduino15/packages/Y Soft/hardware/samd/0.0.1
+  - ln -s $PWD "~/.arduino15/packages/Y Soft/hardware/samd/0.0.1"
+  - cp $PWD/package_iotaysoftcom_index.json ~/.arduino15/
 script:
   - arduino --verify --board "Y Soft:samd:ysoft_iota_play_native" $PWD:/libraries/yi-play-firmata/examples/StandardFirmataPlus/StandardFirmataPlus.ino
 notifications:
