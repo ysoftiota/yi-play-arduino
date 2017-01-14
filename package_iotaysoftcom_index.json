@@ -10,7 +10,7 @@
                 {
                     "category": "Partner", 
                     "name": "Y Soft Boards", 
-                    "url": "https://github.com/ysoftiota/yi-play-arduino/releases/download/v0.0.1/YSoft-samd-0.0.1.tar.gz", 
+                    "url": "https://github.com/ysoftiota/yi-play-arduino/files/705881/YSoft-samd-0.0.1.tar.gz", 
                     "checksum": "SHA-256:1a8a236add696ab32469574e5a16e0392980d54c7b36257b15708ff65cc6e548", 
                     "version": "0.0.1", 
                     "architecture": "samd", 
