@@ -1,6 +1,6 @@
 # [YSoft IOTA Play](https://github.com/ysoftiota/yi-play) board support for Arduino IDE
 
-[![Build Status](https://travis-ci.org/VelkyVenik/yi-play-arduino.svg?branch=master)](https://travis-ci.org/VelkyVenik/yi-play-arduino)
+[![Build Status](https://travis-ci.org/ysoftiota/yi-play-arduino.svg?branch=master)](https://travis-ci.org/ysoftiota/yi-play-arduino)
 
 ## How to start developing
 1. Download and install Arduino IDE from https://www.arduino.cc/en/Main/Software
