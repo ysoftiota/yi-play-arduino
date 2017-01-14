@@ -35,3 +35,7 @@
 #Vim files
 *.*~
 *.swp
+
+#Releases
+YSoft-samd-*.tar.gz
+
