@@ -23,16 +23,12 @@ It may happen that the user program will stop responding and it will not be poss
 ## How to release new package
 1. Get the source code - `git clone git@github.com:ysoftiota/yi-play-arduino.git`
 1. Get libraries source code - `git submodule init; git submodule update`
-1. Build the package - `./build_package.sh`
+1. Build the package - `./build_package.sh`, you will be asked for the new package version
 1. Draft a release on GitHub - https://github.com/ysoftiota/yi-play-arduino/releases/new
 1. Enter tag, version and description
 1. Attach package produced by *build_package.sh* script
 1. Save draft
-1. Edit *package_iotaysoftcom_index.json*
-  * url - package attached to the release url (e.g. https://github.com/ysoftiota/yi-play-arduino/files/705885/YSoft-samd-0.0.1.tar.gz)
-  * checksum - SHA 256 checksum produced by *build_package.sh* script (e.g. SHA-256:f905684b7ca4b99f9d1dfa0094b0fe283adc2d677a99c3a982deb752381913f1)
-  * version
-  * size - package size in bytes
+1. Run *build_package_update_json.sh*, you will be asked for the version and release url (e.g. https://github.com/ysoftiota/yi-play-arduino/files/705885/YSoft-samd-0.0.1.tar.gz)
 1. Push new *package_iotaysoftcom_index.json*
 1. Edit release draft on GitHub and publish it
 1. :house_with_garden:

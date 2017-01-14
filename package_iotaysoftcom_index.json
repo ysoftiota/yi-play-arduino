@@ -15,7 +15,11 @@
                     "version": "0.0.1", 
                     "architecture": "samd", 
                     "archiveFileName": "YSoft-samd-0.0.1.tar.gz", 
-                    "size": "1033049", 
+                    "boards": [
+                        {
+                            "name": "YSoft IOTA Play"
+                        }
+                    ], 
                     "toolsDependencies": [
                         {
                             "packager": "arduino", 
@@ -48,12 +52,8 @@
                             "name": "CMSIS-Atmel"
                         }
                     ], 
-                    "boards": [
-                        {
-                            "name": "YSoft IOTA Play"
-                        }
-                    ]
-                } 
+                    "size": "1033049"
+                }
             ], 
             "tools": [], 
             "email": "info@ysoft.com", 
