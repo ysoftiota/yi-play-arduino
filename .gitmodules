@@ -1,0 +1,3 @@
+[submodule "libraries/yi-play-firmata"]
+	path = libraries/yi-play-firmata
+	url = https://github.com/ysoftiota/yi-play-firmata
