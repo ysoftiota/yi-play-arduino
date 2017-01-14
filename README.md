@@ -1,4 +1,4 @@
-# YSoft IOTA Play board support for Arduino IDE
+# [YSoft IOTA Play](https://github.com/ysoftiota/yi-play) board support for Arduino IDE
 
 ## How to start developing
 1. Download and install Arduino IDE from https://www.arduino.cc/en/Main/Software
