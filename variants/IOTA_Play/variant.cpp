@@ -207,15 +207,20 @@ SERCOM sercom3( SERCOM3 ) ;
 SERCOM sercom4( SERCOM4 ) ;
 SERCOM sercom5( SERCOM5 ) ;
 
-//Uart Serial1( &sercom0, PIN_SERIAL1_RX, PIN_SERIAL1_TX, PAD_SERIAL1_RX, PAD_SERIAL1_TX ) ;
-Uart Serial( &sercom5, PIN_SERIAL_RX, PIN_SERIAL_TX, PAD_SERIAL_RX, PAD_SERIAL_TX ) ;
-/*void SERCOM0_Handler()
-{
-  Serial1.IrqHandler();
-} */
+// Serial1
+Uart Serial1(&sercom5, PIN_SERIAL1_RX, PIN_SERIAL1_TX, PAD_SERIAL1_RX, PAD_SERIAL1_TX);
 
 void SERCOM5_Handler()
 {
-  Serial.IrqHandler();
+  Serial1.IrqHandler();
 }
 
+#include "wiring_private.h"
+#include "wiring_digital.h"
+
+// Initialize variant
+void initVariant()
+{
+	pinPeripheral(PIN_RADIO_SS, PIO_OUTPUT);
+	digitalWrite(PIN_RADIO_SS, HIGH); 
+}
