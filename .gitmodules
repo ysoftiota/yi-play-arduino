@@ -4,3 +4,6 @@
 [submodule "libraries/RFM69"]
 	path = libraries/RFM69
 	url = https://github.com/LowPowerLab/RFM69
+[submodule "libraries/SPIFlash"]
+	path = libraries/SPIFlash
+	url = https://github.com/LowPowerLab/SPIFlash
