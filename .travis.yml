@@ -10,7 +10,7 @@ install:
   - ln -s $PWD ~/.arduino15/packages/YSoft/hardware/samd/0.0.1
   - cp $PWD/package_iotaysoftcom_index.json ~/.arduino15/
 script:
-  - arduino --verify --board YSoft:samd:ysoft_iota_play_native $PWD/libraries/yi-play-firmata/examples/StandardFirmataPlus/StandardFirmataPlus.ino
+  - arduino --verify --board YSoft:samd:ysoft_iota_play_native $PWD/libraries/yi-play-firmata/examples/YiPlayFirmataPlus/YiPlayFirmataPlus.ino
 notifications:
   email:
     on_success: change
