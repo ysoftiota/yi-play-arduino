@@ -6,4 +6,4 @@
 	url = https://github.com/LowPowerLab/SPIFlash
 [submodule "libraries/RFM69"]
 	path = libraries/RFM69
-	url = git@github.com:ysoftiota/RFM69.git
+	url = https://github.com/ysoftiota/RFM69.git
