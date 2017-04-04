@@ -13,6 +13,11 @@
 7. Select the YSoft IOTA Play board from the board menu:
 8. Done
 
+## Installing drivers without Arduino IDE
+1. Download and extract drivers from archive https://github.com/ysoftiota/yi-play-arduino/releases/download/v0.0.3/YSoft-drivers-0.0.3.zip
+2. Run install.bat
+3. Done
+
 ## Troubleshooting
 ### De-bricking procedure
 It may happen that the user program will stop responding and it will not be possible to upload any more sketches. If that occurs then do the following
